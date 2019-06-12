@@ -10,6 +10,57 @@
        
         <div>
 
+            GIt
+            什么是Git
+                一款源代码管理工具
+
+            Git命令集
+                清屏
+                    clear
+                查询版本
+                    git version
+                初始化git仓储
+                    git init
+
+                配置git
+                    配置用户名
+                        git config  --global user.name "用户名"
+                    配置邮箱
+                        git config  --global user.email "邮箱"
+
+                备份文件
+                    增添文件至git工作暂存区
+                        git add ./文件名
+                    文件存储版本库中
+                        git commit -m  "这是对这次功能的说明"
+                    增添所有修改过的文件添加到版本库
+                        git commit --all -m "添加说明"
+
+                查看文件当前存储状态
+                    git status
+                        红色
+                            未能提交暂存区
+                        绿色
+                            已提交暂存区
+
+                git中的忽略文件
+                    .gitignore
+                        新建当前文件到该根目录
+                    /.文件名
+                        写入.gitgnore表示忽略
+
+                查看历史提交日志
+                    git log
+                    git log --oneline
+
+                回退指定版本
+                    按照索引回退
+                        git reset  --hard Head~0
+                    按照版本号回退
+                        git reset  --hard  版本号
+
+                查看所有提交记录
+                    git  reflog
 
                 分支
                     默认主分支
@@ -20,16 +71,26 @@
                         git checkout 分支名
                     合并分支
                         git merge 分支名
+                    删除分支
+                        git  
 
-                分支
-                    默认主分支
-                        master
-                    创建分支
-                        git branch 分支名
-                    切换分支
-                        git checkout 分支名
-                    合并分支
-                        git merge 分支名
+                Githut
+                    传输代码
+                        git push 项目地址  master
+                        
+                ssh
+                    生成公钥与私钥
+                        ssh-keygen -t rsa -C "邮箱"
+                    简写地址三步骤
+                        git remote add origin 地址 
+                            remote 
+                                远程
+                            origin 
+                                相当于地址赋值一个变量
+                        git push origin master
+                        git push origin -u master
+
+              
 
 
 
